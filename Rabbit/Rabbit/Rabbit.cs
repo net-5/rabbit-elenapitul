@@ -83,8 +83,14 @@ namespace Rabbit
         public override string ToString()
         {
             return "The rabbit called " + this.name + " has " + Eyes + " eyes, " + Fur + " fur.\n" + 
-                "It's a" + Gender + ", born in " + BirthDate.ToShortDateString() + " and is " + GetAge() + " old.";}
+                "It's a " + Gender + ", born in " + BirthDate.ToShortDateString() + " and is " + GetAge() + " old.";
+        }
 
+        //5. Is a mammal that moves, sleeps, eats
+        public void Actions()
+        {
+            Console.WriteLine($"{this.name} is a mammal that moves, sleeps, eats.\n");
+        }
 
     }
 }
